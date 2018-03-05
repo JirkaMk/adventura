@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>Nápověda ke hře</title>
+
+</head>
+  
+<body lang="cs" style="padding: 10px">
+<h1>Nápověda ke hře</h1>
+<p>
+  Jedná se o jednoduchou „adventure“ hru s grafickým rozhraním. Vaším úkolem 
+  je procházet jednotlivými místnostmi, sbírat věci, prozkoumávat, přenášet 
+  je a plnit logické úkoly.  Aplikace nabízí zobrazení věcí v místnostech v 
+  podobě obrázků – v levém panelu. Obsah batohu je rovněž graficky realizován – 
+  věci se zobrazují v pravém panelu. Cílem hry je dosáhnout vítězné místnosti. 
+  Tedy vstoupit do komnaty princezny, která je umístěna ve věži.
+</p>
+
+<h2>Zadávání příkazů</h2>
+
+<p>
+  Příkazy se zadávají do textového pole ve formátu <b>příkaz</b><i>(mezera)</i><b>parametr</b>
+  <i>(mezera)</i><b>parametr</b>. 
+  Většina příkazů má pouze jeden parametr, avšak příkaz "dej" má 2 parametry. V tomto případě se 
+  parametry odpovídají pořadí: <b>co se má dát</b><i>(mezera)</i><b>komu se to má dát</b>.  Příklad:
+</p>
+
+<pre>
+  dej jablko mnich
+</pre>
+
+<p>
+  Pokud mnich skutečně vyžaduje lahev, pak proběhne výměna a z vašeho batohu zmizí lahev a 
+  nahradí se věcí, kterou mnich sliboval. V opačném případě mnich pronese zápornou řeč.
+</p>
+
+<h2>Seznam příkazů s paremetry a popisem</h2>
+<ul>
+
+<li><b>jdi</b> (místnost) – hráč se přesune do místnosti chodba. Tato místnost je zpravidla uvedena v seznamu východů aktuální místnosti.</li>
+<li><b>seber</b> (věc) – do vašeho batohu se přidá jablko a zmizí ze seznamu věcí v místnosti.</li>
+<li><b>odemkni</b> (místnost)i – lze použít na zamčené místnosti. Pro umožnění vstupu do takových místností je třeba mít v batohu odpovídající klíč a použít příkaz odemkni, je třeba se samozřejmě nacházet před touto místností.</li>
+<li><b>prozkoumej</b> (bez parametru) – prozkoumá aktuální místnost a vypíše seznam věcí a postav, které byly nalezeny.</li>
+<li><b>mluv </b>(postava) – zobrazí se proslov zadané postavy. V případě, že postava již dostala to, co chce, vypíše se děkovací řeč.</li>
+<li><b>dej</b> (věc) (postava) – viz výše.</li>
+<li><b>pouzij</b> (věc) – provede se určitá logická reakce.  Tento příkaz se používá pro splnění úkolů.</li>
+<li><b>batoh</b> (bez parametru) – vypíše seznam věcí, které se nachází v batohu</li>
+<li><b>poloz</b> (věc) – odstraní věc z batohu a vloží do místnosti, ve které se nacházíte.</li>
+<li><b>napoveda</b> (bez parametru)– vypíše základní nápovědu ke hře.</li>
+<li><b>konec </b>(bez parametru) – ukončí hru.</li>
+
+</ul>
+
+<h2>Postup pro dokončení hry</h2>
+
+<p>
+  Uvádím postup s minimálním počtem použití příkazu jdi, kdo tuto hru nezná,
+   bude mu hraní trvat pravděpodobně mnohem déle.
+Vstoupit do sálu, prozkoumat truhlu, sebrat jablko. Přes předsíň, chodbu, 
+schodiště, podzemní chodbu se dostat do kovárny, zde sebrat meč, pochodeň a 
+prozkoumat bednu – sebrat klíč k vězení. Vrátit se do podzemní chodby, odemknout 
+vězení, dát vězni jablko – získáme štít. Přes podzemní chodbu, schodiště, chodbu, 
+předsíň, knihovnu se dostat do komory – použít pochodeň a  vyhubit krysy. Zde položit
+ pár nepotřebných věcí – klíč k vězení a pochodeň.  Sebrat pytel s krysami a donést 
+ ho mnichovi do sálu (před tím ale prozkoumat stůl v knihovně a sebrat knihu).  Od 
+ mnicha získáme klíč k laboratoři. Projdeme ke schodišti, vejdeme do věžní chodby. 
+ Odemkneme laboratoř a dáme duchovi knihu – získáme kouzelný amulet. Vejdeme do dračího 
+ doupěte, použijeme meč a sebereme ze země klíč ke komnatě. Vrátíme se do laboratoře a 
+ odemkneme komnatu. Vejdeme k princezně. Konec.
+
+</p>
+
+<h2>Spuštění hry</h2>
+
+<p>
+  Pokud máme k dispozici zdrojové kódy, spouští se hra třídou START. Jinak stačí 
+  spustit v příkazovém řádku soubor s koncovkou <b>jar</b>
+</p>
+
+  </body>
+</html>

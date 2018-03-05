@@ -1,0 +1,229 @@
+.list-view {
+    -fx-background-insets: 0;
+    -fx-padding: 0;  
+    -fx-border-color: #00ff00; 
+    -fx-border-width: 3px;
+    -fx-control-inner-background:#00ff00; 
+    -fx-font-family: Consolas; 
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-highlight-fill: #00ff00; 
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: lime;
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+    -fx-text-fill: black;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: lime;
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-pref-width: 150px;
+    -fx-background-color: lime;
+    -fx-text-fill: black;
+    -fx-font-family: Consolas; 
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-shadow-highlight-color: black;
+    -fx-outer-border: lime;
+    -fx-inner-border: lime; 
+    -fx-body-color: black;    
+}
+
+.button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: lime;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.combo-box-base  
+{
+    -fx-pref-width: 150px;
+    -fx-background-color: lime, lime, lime, lime;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-background-insets: -1 -1 -1 -1, 1, 1;    
+    -fx-outer-border: lime;
+
+}
+
+.combo-box .list-cell 
+{
+    -fx-background-color: lime;
+    -fx-text-fill: black;
+    -fx-font-family: Consolas; 
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-shadow-highlight-color: black;
+    -fx-outer-border: lime;
+    -fx-inner-border: lime; 
+    -fx-body-color: black;   
+}
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color: lime ;
+    -fx-text-fill: black;
+    -fx-font-family: Consolas;
+}
+
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-text-fill: lime;
+}
+
+.combo-box-base .arrow-button {
+    -fx-background-color: transparent, lime, transparent, black;
+}
+/*.combo-box .arrow, .combo-box .arrow-button{
+    -fx-background-color: lime;
+}*/
+
+.label
+{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #000000;
+    -fx-text-fill: lime;
+    -fx-font-family: Consolas;
+    -fx-font-weight: bold;
+    -fx-font-size: 16pt;
+}
+
+.tooltip
+{
+-fx-text-fill: black;
+-fx-font-family: Consolas;
+-fx-font-weight: bold;
+-fx-font-size: 10pt;
+-fx-background-color: lime;
+-fx-border-width: 2px;
+-fx-border-color:  black;
+}
+
+.menu-item .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-family: Consolas; 
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-shadow-highlight-color: black;
+    -fx-outer-border: transparent;
+    -fx-inner-border: transparent; 
+    -fx-body-color: black;
+}
+
+.context-menu {
+    /*-fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";*/
+    -fx-outer-border: white;
+    -fx-inner-border: white;
+    -fx-border-width: 2px;
+    -fx-background-radius: 3px, 3px, 3px, 3px;
+    -fx-padding: 2 2 2 2;
+    -fx-background-color: white;
+    /*-fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+/*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    /*-fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;*/ /* 4 1 8 1 */
+}
+
+
+.menu-item:hover {
+    -fx-background-color: black;
+    -fx-background-radius: 3px, 3px, 3px, 3px;  
+}
+
+.menu-item:focused {
+    -fx-background-color: black;
+    -fx-background-radius: 3px, 3px, 3px, 3px;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: lime;  
+    -fx-background-radius: 3px, 3px, 3px, 3px;
+}
+
+.separator *.line { 
+-fx-border-style: solid;
+-fx-border-width: 0.5px;
+-fx-border-color: white;
+}
+
+.menu-bar{
+  -fx-background-color: lime;
+  -fx-border-color:  black;
+  -fx-border-width: 5;
+  -fx-padding: 2 2 2 2;
+}
+
+.menu-bar .label {
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-family: Consolas;
+    -fx-font-weight: bold;
+    -fx-font-size: 12pt;    
+}
+
+
+.context-menu .label :hover {
+    -fx-text-fill: lime;    
+}
+
+.menu:focused {
+    -fx-background-color: black;
+    -fx-text-fill: lime;    
+}
+
+.menu-bar:focused .label {
+    -fx-text-fill: lime;  
+    -fx-background-radius: 3px, 3px, 3px, 3px;
+}
+
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: black;
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: black;
+}
+
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: lime;
+}
+
+.menu{
+    -fx-outer-border: white;
+    -fx-inner-border: white;
+    -fx-border-width: 2px;
+     
+    
+}
+
+.menu-item .label {
+    -fx-outer-border: white;
+    -fx-inner-border: white;
+    -fx-border-width: 2px;
+
+}
+
+
+
+
